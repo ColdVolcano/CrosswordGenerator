@@ -46,16 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Difcultad.cs" />
+    <Compile Include="Controles\BotonDificultad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\BotonDificultad.Designer.cs">
+      <DependentUpon>BotonDificultad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Selector.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Formas\Selector.Designer.cs">
+      <DependentUpon>Selector.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Controles\BotonDificultad.resx">
+      <DependentUpon>BotonDificultad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Selector.resx">
+      <DependentUpon>Selector.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

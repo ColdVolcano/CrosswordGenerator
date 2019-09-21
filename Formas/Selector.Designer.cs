@@ -1,6 +1,6 @@
-﻿namespace CrosswordGenerator
+﻿namespace CrosswordGenerator.Formas
 {
-    partial class Form1
+    partial class Selector
     {
         /// <summary>
         /// Variable del diseñador necesaria.
