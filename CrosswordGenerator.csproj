@@ -53,6 +53,12 @@
     <Compile Include="Controles\BotonDificultad.Designer.cs">
       <DependentUpon>BotonDificultad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formas\Crossword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Crossword.Designer.cs">
+      <DependentUpon>Crossword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formas\Selector.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controles\BotonDificultad.resx">
       <DependentUpon>BotonDificultad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Crossword.resx">
+      <DependentUpon>Crossword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formas\Selector.resx">
       <DependentUpon>Selector.cs</DependentUpon>
@@ -88,6 +97,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Palabras.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

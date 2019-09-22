@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 using System.Windows.Forms;
+using CrosswordGenerator.Formas;
 
 namespace CrosswordGenerator.Controles
 {
     public partial class BotonDificultad : UserControl
     {
+        private Dificultad diff;
         public BotonDificultad(Dificultad diff)
         {
+            this.diff = diff;
             InitializeComponent();
             boton.Size = Size = new Size(110, 110);
             boton.Text = diff.ToString();
@@ -29,6 +25,14 @@ namespace CrosswordGenerator.Controles
                     boton.BackColor = Color.OrangeRed;
                     break;
             }
+            boton.Click += (_, e) => InvokeOnClick(this, e);
+            Click += (_, __) => AbrirCrucigrama();
+
+        }
+
+        private void AbrirCrucigrama()
+        {
+            new Crossword(diff).ShowDialog();
         }
     }
 }
