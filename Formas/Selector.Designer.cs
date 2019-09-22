@@ -41,14 +41,15 @@
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Crucigramas";
             // 
-            // Form1
+            // Selector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 281);
             this.Controls.Add(this.titleLabel);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Name = "Selector";
+            this.Text = "Generador de crucigramas";
             this.ResumeLayout(false);
             this.PerformLayout();
 
