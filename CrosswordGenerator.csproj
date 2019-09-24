@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controles\BotonLetra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\BotonLetra.Designer.cs">
+      <DependentUpon>BotonLetra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coordenada.cs" />
+    <Compile Include="Cuadricula.cs" />
     <Compile Include="Difcultad.cs" />
     <Compile Include="Controles\BotonDificultad.cs">
       <SubType>UserControl</SubType>
@@ -65,10 +73,16 @@
     <Compile Include="Formas\Selector.Designer.cs">
       <DependentUpon>Selector.cs</DependentUpon>
     </Compile>
+    <Compile Include="LetraEsperada.cs" />
+    <Compile Include="Orientacion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controles\BotonDificultad.resx">
       <DependentUpon>BotonDificultad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\BotonLetra.resx">
+      <DependentUpon>BotonLetra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formas\Crossword.resx">
       <DependentUpon>Crossword.cs</DependentUpon>
@@ -102,6 +116,7 @@
     <Content Include="Palabras.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Transparent.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

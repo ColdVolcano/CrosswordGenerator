@@ -28,3 +28,13 @@ Exterior|aa
 Triste|ab
 Escenografia|ac
 Carambola|ad
+Parquimetro|ae
+Escarbar|af
+Orangutan|ag
+Ceramica|ah
+Relampago|ai
+Cancha|aj
+Invierno|ak
+Rehen|al
+Celebridad|am
+Veredicto|an

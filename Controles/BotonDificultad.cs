@@ -6,7 +6,7 @@ namespace CrosswordGenerator.Controles
 {
     public partial class BotonDificultad : UserControl
     {
-        private Dificultad diff;
+        private readonly Dificultad diff;
         public BotonDificultad(Dificultad diff)
         {
             this.diff = diff;
