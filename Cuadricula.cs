@@ -5,19 +5,30 @@ namespace CrosswordGenerator
 {
     public class Cuadricula<T> where T : class
     {
-        private readonly SortedList<int, SortedList<int, T>> letrasPosicionadas = new SortedList<int, SortedList<int, T>>();
+        private readonly SortedList<int, SortedList<int, T>> elementos = new SortedList<int, SortedList<int, T>>();
 
-        public int StartColumn { get { return letrasPosicionadas.Any() ? letrasPosicionadas.First().Key : 0; } }
-        public int EndColumn { get { return letrasPosicionadas.Any() ? letrasPosicionadas.Last().Key : 0; } }
-        public int StartRow { get { return letrasPosicionadas.Any() ? letrasPosicionadas.Values.Min(col => col.Keys.Min()) : 0; } }
-        public int EndRow { get { return letrasPosicionadas.Any() ? letrasPosicionadas.Values.Max(col => col.Keys.Max()) : 0; } }
+        public int ColumnaInicio { get { return elementos.Any() ? elementos.First().Key : 0; } }
+        public int ColumnaFin { get { return elementos.Any() ? elementos.Last().Key : 0; } }
+        public int FilaInicio { get { return elementos.Any() ? elementos.Values.Min(col => col.Keys.Min()) : 0; } }
+        public int FilaFin { get { return elementos.Any() ? elementos.Values.Max(col => col.Keys.Max()) : 0; } }
 
+        public T this[Coordenada xy]
+        {
+            get
+            {
+                return this[xy.X, xy.Y];
+            }
+            set
+            {
+                this[xy.X, xy.Y] = value;
+            }
+        }
         public T this[int x, int y]
         {
             get
             {
-                if (letrasPosicionadas.ContainsKey(x) && letrasPosicionadas[x].ContainsKey(y))
-                    return letrasPosicionadas[x][y];
+                if (elementos.ContainsKey(x) && elementos[x].ContainsKey(y))
+                    return elementos[x][y];
                 else
                     return null;
             }
@@ -28,21 +39,31 @@ namespace CrosswordGenerator
 
                 if (value == null)
                 {
-                    letrasPosicionadas[x].Remove(y);
-                    if (letrasPosicionadas[x].Count == 0)
-                        letrasPosicionadas.Remove(x);
+                    elementos[x].Remove(y);
+                    if (elementos[x].Count == 0)
+                        elementos.Remove(x);
                     return;
                 }
 
                 if (this[x, y] != null)
                 {
-                    letrasPosicionadas[x][y] = value;
+                    elementos[x][y] = value;
                     return;
                 }
 
-                if (!letrasPosicionadas.ContainsKey(x))
-                    letrasPosicionadas.Add(x, new SortedList<int, T>());
-                letrasPosicionadas[x].Add(y, value);
+                if (!elementos.ContainsKey(x))
+                    elementos.Add(x, new SortedList<int, T>());
+                elementos[x].Add(y, value);
+            }
+        }
+
+        public void Desplazar(Coordenada despl)
+        {
+            var entradas = Entradas;
+            elementos.Clear();
+            foreach(var ent in entradas)
+            {
+                this[ent.Key.X - despl.X, ent.Key.Y - despl.Y] = ent.Value;
             }
         }
 
@@ -51,7 +72,7 @@ namespace CrosswordGenerator
             get
             {
                 Dictionary<Coordenada, T> entradas = new Dictionary<Coordenada, T>();
-                foreach (var columna in letrasPosicionadas)
+                foreach (var columna in elementos)
                 {
                     foreach (var entrada in columna.Value)
                     {
@@ -66,7 +87,7 @@ namespace CrosswordGenerator
             }
         }
 
-        public int Width { get { return letrasPosicionadas.Count == 0 ? 0 : EndColumn - StartColumn + 1; } }
-        public int Height { get { return letrasPosicionadas.Count == 0 ? 0 : EndRow - StartRow + 1; } }
+        public int Width { get { return elementos.Count == 0 ? 0 : ColumnaFin - ColumnaInicio + 1; } }
+        public int Height { get { return elementos.Count == 0 ? 0 : FilaFin - FilaInicio + 1; } }
     }
 }
