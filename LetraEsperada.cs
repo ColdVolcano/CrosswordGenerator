@@ -6,11 +6,6 @@ namespace CrosswordGenerator
     {
         public char Letra;
         public List<int> NumeroPalabra;
-        public List<int> LetraInicial;
-
-        public override string ToString()
-        {
-            return $"({NumeroPalabra}) {Letra}";
-        }
+        public Dictionary<int, Orientacion> LetraInicial;
     }
 }
