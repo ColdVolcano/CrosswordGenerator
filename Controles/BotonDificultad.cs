@@ -26,13 +26,16 @@ namespace CrosswordGenerator.Controles
                     break;
             }
             boton.Click += (_, e) => InvokeOnClick(this, e);
-            Click += (_, __) => AbrirCrucigrama();
+            Click += (_, __) => abrirCrucigrama();
 
         }
 
-        private void AbrirCrucigrama()
+        private void abrirCrucigrama()
         {
-            new Crossword(diff).ShowDialog();
+            using (var crossword = new Crossword(diff))
+            {
+                crossword.ShowDialog();
+            }
         }
     }
 }
