@@ -1,40 +1,38 @@
-﻿Colesterol|a
-Escuadra|b
-Relatividad|c
-Monologo|d
-Fotocopia|e
-Vecindario|f
-Significado|g
-Mandibula|h
-Documento|i
-Fregadero|j
-Panorama|k
-Pantano|l
-Araña|m
-Vegetal|n
-Ladrillos|o
-Apellido|p
-Marisco|q
-Fotografia|r
-Oceano|s
-Escuela|t
-Bocina|u
-Oso|v
-Parilla|w
-Hormona|x
-Agitado|y
-Despegue|z
-Exterior|aa
-Triste|ab
-Escenografia|ac
-Carambola|ad
-Parquimetro|ae
-Escarbar|af
-Orangutan|ag
-Ceramica|ah
-Relampago|ai
-Cancha|aj
-Invierno|ak
-Rehen|al
-Celebridad|am
-Veredicto|an
+﻿Colesterol|Sustancia grasa que se encuentra en las membranas de muchas células animales y en el plasma sanguíneo.
+Escuadra|Instrumento de dibujo lineal hecho de madera, metal o plástico, que tiene forma de triángulo rectángulo isósceles o está constituido por dos reglas perpendiculares.
+Relatividad|Teoría según la cual las leyes físicas se transforman cuando se cambia el sistema de referencia; se demuestra que es imposible hallar un sistema de referencia absoluto.
+Monologo|Discurso que mantiene una persona consigo misma, como si pensase en voz alta.
+Fotocopia|Reproducción fotográfica de un texto, una imagen, etc., que se hace sobre papel de forma instantánea con una máquina eléctrica.
+Vecindario|Conjunto de los vecinos de un mismo edificio, barrio o municipio.
+Significado|Idea o concepto que representan o evocan los elementos lingüísticos, como las palabras, expresiones o textos.
+Mandibula|Cada una de las dos piezas óseas o cartilaginosas que forman la boca de los vertebrados, y en las cuales están encajados los dientes.
+Documento|Escrito en papel u otro tipo de soporte con que se prueba o acredita una cosa, como un título, una profesión, un contrato, etc.
+Fregadero|Pila o recipiente con llave de agua y desagüe que sirve para lavar la vajilla y los utensilios de la cocina.
+Panorama|Vista de una gran extensión de terreno desde un lugar determinado, generalmente alto.
+Pantano|Depresión del terreno donde de forma natural queda agua estancada, generalmente con poca profundidad, y cuyo fondo es más o menos cenagoso.
+Araña|Cualquiera de los animales del orden de los araneidos, como la tarántula o la viuda negra.
+Vegetal|De las plantas o relacionado con ellas.
+Ladrillo|Pieza de arcilla cocida, generalmente con forma de prisma rectangular, que se usa en la construcción de muros, paredes, pilares, etc.
+Apellido|Nombre que sigue al nombre de pila de una persona y que se transmite de padres a hijos.
+Marisco|Cualquier invertebrado marino comestible y destinado al consumo alimenticio, especialmente los crustáceos y los moluscos.
+Fotografia|Técnica de obtención de imágenes por la acción química de la luz sobre una superficie con unas características determinadas.
+Oceano|Masa de agua salada que cubre aproximadamente las tres cuartas partes de la superficie terrestre.
+Escuela|Institución destinada a la enseñanza, en especial la primaria, que proporciona conocimientos que se consideran básicos en la alfabetización.
+Bocina|Pieza de forma cónica con que se refuerza o amplifica el sonido de un gramófono u otro aparato sonoro.
+Parilla|Vasija de base ancha y boca estrecha.
+Hormona|Sustancia química producida por un órgano, o por parte de él, cuya función es la de regular la actividad de un tejido determinado.
+Agitar|Mover una cosa repetidamente hacia un lado y otro con fuerza y rapidez.
+Despegue|Acción de comenzar un proceso de desarrollo.
+Exterior|Superficie externa de una cosa.
+Tristeza|Sentimiento de dolor anímico producido por un suceso desfavorable que suele manifestarse con un estado de ánimo pesimista, la insatisfacción y la tendencia al llanto.
+Escenografia|Conjunto de elementos necesarios para ambientar y representar una obra de teatro, película o programa de televisión.
+Carambola|Resultado afortunado obtenido por suerte o por casualidad.
+Parquimetro|Aparato que mide el tiempo de estacionamiento de un vehículo en una zona de la vía pública en que se debe pagar para aparcar y que cobra al usuario la cantidad debida.
+Escarbar|Fisgar o curiosear en un asunto para tratar de enterarse o de saber algo.
+Ceramica|Arte o técnica de fabricar objetos de barro, loza y porcelana de todas las clases y calidades.
+Relampago|Resplandor vivo y momentáneo producido por un choque entre nubes tormentosas cargadas de electricidad estática.
+Cancha|Local o recinto destinado a la práctica de determinados deportes, como el baloncesto o el tenis.
+Invierno|En los países ecuatoriales, temporada de lluvias que dura aproximadamente seis meses.
+Rehen|Persona retenida en contra de su voluntad por alguien que exige una cantidad de dinero o el cumplimiento de unas determinadas condiciones.
+Celebridad|Persona célebre.
+Veredicto|Decisión final pronunciada por un jurado sobre la inocencia o culpabilidad de un acusado o sobre un hecho en litigio.
